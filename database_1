@@ -1,0 +1,153 @@
+
+read() attempts to read up to count bytes from file descriptor fd
+       into the buffer starting at buf.
+
+       ssize_t read(int fd, void *buf, size_t count);
+       
+shutdown() The shutdown() call causes all or part of a full-duplex connection on
+       the socket associated with sockfd to be shut down.  If how is
+       SHUT_RD, further receptions will be disallowed.  If how is SHUT_WR,
+       further transmissions will be disallowed.  If how is SHUT_RDWR,
+       further receptions and transmissions will be disallowed.
+
+       int shutdown(int sockfd, int how);
+
+
+write(1, "begin first select\n", 19begin first select
+)    = 19
+write(3, "\27\3\3\0E\6\227\v\4\251\350\311\34\231\357\217'\323\353\312\"&\17\22]I/\1\214'\373\207"..., 74) = 74
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\16u\363\314\210f\307U\27\377:\333~\262LaU\353\17O\207\27\217\202A"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\17.\374\243\\4\377\227B\213\355Sd\235\302z\241\17\231\355z\32\252\330\230"..., 16408) = 16408
+brk(0x557bcdaac000)                     = 0x557bcdaac000
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\20\265e\222F\325Z\325\374\20\23\351P:\303\334\235\34?@\302\23\257\340\272"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\21\302\344#\10\16\303\361\315\333\330+]Qd\37\264\335\247y\376\244\362\3\302"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\22\301+\351\300\252\26\310\215?\270=\371\204F\274\352&\341]+\306 \273Z"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\23\211\322\376\335\303\335>\22\35\351\35\2343\231\306h\235t\276i\22W5U"..., 16408) = 16408
+brk(0x557bcdad4000)                     = 0x557bcdad4000
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\24\203\255\224n\350\310\300{\n\253\261%\0\256\32_\361<\226\4\266\331q\275"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\25;\214\1k\5\271\245\355M\310\264\6v84{\212o\364I\333>|)"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\26\235e\360\332\274?\nAC\253\277;\351\5i\374\223\265g#\26\234\244\231"..., 16408) = 16408
+brk(0x557bcdaf8000)                     = 0x557bcdaf8000
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\27,\200?\27\346'\346\261\375-\263\354\v**\342\310W\177\227\207'\222'"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\30\335u\263\215\314j\264\3222\324\5N\210\310\221\270`xUu\300\25P?"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\31\305)\25o\326\314g\206\344\232\225\230\313\245\362\371\226\34&\207\251\332\31\227"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\32\251\34-\"\362\366\7I[/|^eP5\367|\r\220`M\246\2503"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\33\26\316\376\201+k\7{\346A\325n\300\355\0\276\254\3620\241\325\341\261\247"..., 16408) = 16408
+brk(0x557bcdb24000)                     = 0x557bcdb24000
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\34\177u\276\323_%\227\376i\353\226'\373\367A\335F\263\301\226H\365\256\206"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\35y\324\375G.Z\255\367\305[C*\3334`U6\372\roW\2204\233"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\36\365\207p\245h|\330B\355]\371\24\324V\36\234\273\263\t\227]\25\347_"..., 16408) = 16408
+brk(0x557bcdb4a000)                     = 0x557bcdb4a000
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\37\211ZyE,I2D\314f\202\223\30>O\25#Z\304\322\340\1\221e"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306 u\245k]P\24>b-\261\307\224\332#J\267F\0103\313\201.O\5"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306!(\364\364\331\216\243\21\v\t\355\366\5\257&\"bJ\271\3\32^\327Wx"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306\"\177\256\341\326\277\0261}\230\322T\37^\365\321\202]TJH\344\277)x"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306#W\32u\233\347o\3734\263\177~\360\371\354\33D\212?\322\177\307eZ\332"..., 16408) = 16408
+brk(0x557bcdb74000)                     = 0x557bcdb74000
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306$\4J\367\212\265\341\216\24{\337%\330\362\310\301\301\300F\32\310\272\5Y6"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306%\324\3\344O\275\303;\306\33\230\251*\301t\351\334\tfR\2q^\223\361"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306&\223\366<W$s\254\312\375}\323w\304U\206X\227\211=}<dq\7"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306'o\22\237\373Ai/\213\221\210\325\235\311\244\307dB\365\306_\324w!\34"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306(\343{T\352\233\221\236\343\370[A\232\352\215jl\240\247\225\23\255\314\303\353"..., 16408) = 16408
+brk(0x557bcdba4000)                     = 0x557bcdba4000
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306)\316\35T\336\212\245:U\354<\373\343\313*}s\244\252Z`\330\244I~"..., 16408) = 16408
+read(3, "\27\3\3@\30", 5)               = 5
+read(3, "\"\177%\333\323\4\306*\323\234a$\32\"~\27\223\370\272\21\336+\264\336\222\316\5\367 \321d["..., 16408) = 16408
+read(3, "\27\3\3\0\245", 5)             = 5
+read(3, "\"\177%\333\323\4\306+\204t\ngg\2668\357T\245H]\304UJ\275AF\270/\345By\201"..., 165) = 165
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f78b6000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f7876000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f7836000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f77f6000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f77b6000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f7776000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f7736000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f76f6000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f93f76b6000
+write(1, "end first select\n", 17end first select
+)      = 17
+write(3, "\27\3\3\0\35\6\227\v\4\251\350\311\35\346\330&\345p!\32\327/X\262`\2409\16\231\"[\252"..., 34) = 34
+shutdown(3, SHUT_RDWR)                  = 0
+close(3)                                = 0
+write(1, "begin second select\n", 20begin second select
+)   = 20
+write(2, "Traceback (most recent call last"..., 35Traceback (most recent call last):
+) = 35
+write(2, "  File \"database.py\", line 17, i"..., 43  File "database.py", line 17, in <module>
+) = 43
+openat(AT_FDCWD, "database.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=487, ...}) = 0
+read(3, "#!/usr/bin/python\nimport MySQLdb"..., 4096) = 487
+write(2, "    ", 4    )                     = 4
+write(2, "cursor.execute(\"SELECT * FROM IN"..., 59cursor.execute("SELECT * FROM INFORMATION_SCHEMA.COLUMNS")
+) = 59
+close(3)                                = 0
+write(2, "  File \"/home/moriarty/.local/li"..., 100  File "/home/moriarty/.local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 186, in execute
+) = 100
+openat(AT_FDCWD, "/home/moriarty/.local/lib/python2.7/site-packages/MySQLdb/cursors.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=16298, ...}) = 0
+read(3, "\"\"\"MySQLdb Cursors\n\nThis module "..., 4096) = 4096
+read(3, "      \"\"\"Advance to the next res"..., 4096) = 4096
+write(2, "    ", 4    )                     = 4
+write(2, "while self.nextset():\n", 22while self.nextset():
+) = 22
+close(3)                                = 0
+write(2, "  File \"/home/moriarty/.local/li"..., 100  File "/home/moriarty/.local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 139, in nextset
+) = 100
+openat(AT_FDCWD, "/home/moriarty/.local/lib/python2.7/site-packages/MySQLdb/cursors.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=16298, ...}) = 0
+read(3, "\"\"\"MySQLdb Cursors\n\nThis module "..., 4096) = 4096
+read(3, "      \"\"\"Advance to the next res"..., 4096) = 4096
+write(2, "    ", 4    )                     = 4
+write(2, "nr = db.next_result()\n", 22nr = db.next_result()
+) = 22
+close(3)                                = 0
+write(2, "MySQLdb._exceptions", 19MySQLdb._exceptions)     = 19
+write(2, ".", 1.)                        = 1
+write(2, "OperationalError", 16OperationalError)        = 16
+write(2, ": ", 2: )                       = 2
+write(2, "(2006, '')", 10(2006, ''))              = 10
+write(2, "\n", 1
+)                       = 1
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f93fa6e8f20}, {sa_handler=0x557bcc1ba1c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f93fa6e8f20}, 8) = 0
+munmap(0x7f93f76f6000, 262144)          = 0
+munmap(0x7f93f7736000, 262144)          = 0
+munmap(0x7f93f7776000, 262144)          = 0
+munmap(0x7f93f77b6000, 262144)          = 0
+munmap(0x7f93f77f6000, 262144)          = 0
+munmap(0x7f93f7836000, 262144)          = 0
+munmap(0x7f93f7876000, 262144)          = 0
+munmap(0x7f93f78b6000, 262144)          = 0
+fstat(6, {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 9), ...}) = 0
+close(6)                                = 0
+fstat(7, {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 8), ...}) = 0
+close(7)                                = 0
+exit_group(1)                           =

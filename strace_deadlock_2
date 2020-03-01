@@ -1,0 +1,35 @@
+g++ -pthread deadlock.cpp -o deadlock
+
+
+CLONE
+       By contrast with fork(2), these system calls provide more precise
+       control over what pieces of execution context are shared between the
+       calling process and the child process.  For example, using these
+       system calls, the caller can control whether or not the two processes
+       share the virtual address space, the table of file descriptors, and
+       the table of signal handlers.  These system calls also allow the new
+       child process to be placed in separate namespaces(7).
+
+FUTEX_WAIT              
+              This operation tests that the value at the futex word pointed
+              to by the address uaddr still contains the expected value val,
+              and if so, then sleeps waiting for a FUTEX_WAKE operation on
+              the futex word.  The load of the value of the futex word is an
+              atomic memory access (i.e., using atomic machine instructions
+              of the respective architecture).
+
+FUTEX_PRIVATE_FLAG (since Linux 2.6.22)
+              This option bit can be employed with all futex operations.  It
+              tells the kernel that the futex is process-private and not
+              shared with another process (i.e., it is being used for
+              synchronization only between threads of the same process).
+
+futex(0x7f773cdca09c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f773cdca0a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f773b67d000
+mprotect(0x7f773b67e000, 8388608, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7f773be7cfb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f773be7d9d0, tls=0x7f773be7d700, child_tidptr=0x7f773be7d9d0) = 7065
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f773ae7c000
+mprotect(0x7f773ae7d000, 8388608, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7f773b67bfb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f773b67c9d0, tls=0x7f773b67c700, child_tidptr=0x7f773b67c9d0) = 7066
+futex(0x7f773be7d9d0, FUTEX_WAIT, 7065, NULL
