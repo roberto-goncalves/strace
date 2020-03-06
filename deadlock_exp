@@ -1,5 +1,14 @@
+How to run
+
 g++ -pthread deadlock.cpp -o deadlock
 
+
+Explanation
+
+In this example, what we need to look in on the futex() function and the FUTEX_WAIT flag, futex normally
+reserve a address or wait for that address to be released. In a case of a deadlock it will never be released,
+so, this is the root case problem at syscall level, the futex() operations waits for the release on process 
+7065, but it will never release the lock.
 
 CLONE
        By contrast with fork(2), these system calls provide more precise
