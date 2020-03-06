@@ -6,7 +6,8 @@ Basic explanation
 
 Basically, what we need to see in this example is the connection attempt when the function shutdown()
 was called, after that the socket has been closed and it does not have been opened again. So, when you try
-to read() from a closed socket you get an exception.
+to read() from a closed socket you get an exception. This is very common on a distributed environment, or 
+in a case where there is a maximum pool of connections
 
 read() attempts to read up to count bytes from file descriptor fd
        into the buffer starting at buf.
