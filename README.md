@@ -22,3 +22,16 @@ strace -p PID (Process Id)
 
 On each file with the same name have detailed explanations about what happened.
 
+This images contains the most important files on each example :)
+
+### Deadlock
+
+![deadlock](https://github.com/roberto-goncalves/strace/blob/master/images/deadlock.png "deadlock")
+
+### Database
+
+![database](https://github.com/roberto-goncalves/strace/blob/master/images/database.png "database")
+
+### Errors
+
+![errors](https://github.com/roberto-goncalves/strace/blob/master/images/errors.png "errors")
